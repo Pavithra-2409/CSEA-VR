@@ -110,7 +110,7 @@ export default function Zone1() {
     };
 
     return (
-        <div style={{width: '100vw', height: '100vh', overflow: 'hidden', position: 'relative', marginTop: '-70px'}}>
+        <div style={{width: '100vw', height: 'calc(100vh - 70px)', overflow: 'hidden', position: 'relative'}}>
             <div className={`zone1-carousel ${sliderClass}`}>
                 <div className="list">
                     {items.map((item, index) => {

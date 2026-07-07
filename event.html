@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
-        /* ── CINEMATIC TRANSITION ── */
+        
         .transition-overlay {
             position: fixed;
             inset: 0;
@@ -20,7 +20,7 @@
         body.loaded .transition-overlay {
             opacity: 0;
         }
-        /* Freeze all slide animations so JS can snap to a target slide instantly */
+        
         .carousel.no-transition .list .item,
         .carousel.no-transition .list .item .category,
         .carousel.no-transition .list .item h2,
@@ -30,7 +30,7 @@
             transition: none !important;
             animation: none !important;
         }
-        /* Force-show the active slide when no-transition is applied */
+        
         .carousel.no-transition .list .item.active {
             opacity: 1 !important;
             transform: translateX(0) !important;
@@ -42,36 +42,35 @@
             opacity: 1 !important;
             transform: translateX(0) !important;
         }
-        /* Force-hide all non-active slides */
+        
         .carousel.no-transition .list .item:not(.active) {
             opacity: 0 !important;
             transform: translateX(0) !important;
         }
 
-        /* ── STRAIGHT + FLOAT SLIDES (1st and 5th) ── */
-        /* Override the default -20deg rotation so the image stays perfectly upright */
+        
+        
         .item.straight-float.active figure img {
             transform: rotate(0deg) !important;
         }
-        /* Kill the img rotation transition entirely for these slides — stay at 0deg */
+        
         .item.straight-float figure img {
             transform: rotate(0deg) !important;
         }
 
-        /* Float keyframe animation — applied to the figure wrapper, not the img,
-           so it doesn't interfere with the img's own transform */
+        
         @keyframes dept-float {
             0%, 100% { transform: translateY(0px); }
             50%       { transform: translateY(-18px); }
         }
 
-        /* Start float AFTER the slide-in entry animation finishes (0.9s delay) */
+        
         .item.straight-float.active figure {
             animation: dept-float 3.2s ease-in-out infinite;
             animation-delay: 0.9s;
         }
 
-        /* Stop floating immediately when slide leaves active state */
+        
         .item:not(.active).straight-float figure {
             animation: none;
         }
@@ -96,25 +95,25 @@
 
     <section class="carousel">
         <div class="list" id="event-container">
-            <!-- Dynamic Event Content Injected Here by JS -->
+            
         </div>
     </section>
 
-    <!-- PREMIUM BACK TO HOME BUTTON -->
+    
     <a class="btn-back-home" id="btn-back-home" href="#">
         <span class="icon-circle"><i class="fa-solid fa-arrow-left"></i></span>
         Back to Home Page
     </a>
 
     <script>
-        // Trigger fade in once everything is ready
+        
         window.addEventListener('load', () => {
             setTimeout(() => {
                 document.body.classList.add('loaded');
             }, 100);
         });
 
-        // Event Database mapping IDs to Content
+        
         const eventDatabase = {
             '001': {
                 category: 'Hackathon',
@@ -143,13 +142,13 @@
             }
         };
 
-        // Parse Hash Parameter (e.g. event.html#002)
+        
         let eventId = window.location.hash.replace('#', '') || '001';
-        if (!eventDatabase[eventId]) { eventId = '001'; } // fallback
+        if (!eventDatabase[eventId]) { eventId = '001'; } 
 
         const ev = eventDatabase[eventId];
 
-        // Render Dynamic Slide
+        
         const container = document.getElementById('event-container');
         container.innerHTML = `
             <div class="item active">
@@ -169,7 +168,7 @@
             </div>
         `;
 
-        // Back button: cinematic blackout then redirect to landing page
+        
         document.getElementById('btn-back-home').addEventListener('click', (e) => {
             e.preventDefault();
             const overlay = document.querySelector('.transition-overlay');

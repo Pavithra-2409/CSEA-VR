@@ -28,12 +28,12 @@
 }
 
 
-/* carousel */
+
 .zone1-carousel{
     position: relative;
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
-    margin-top: -50px;
+    margin-top: 0;
 }
 .zone1-carousel .list{
     position: absolute;
@@ -41,6 +41,7 @@
     max-width: 90%;
     height: 80%;
     left: 50%;
+    top: 10%;
     transform: translateX(-50%);
 }
 .zone1-carousel .list .item{
@@ -134,7 +135,7 @@
     opacity: var(--item5-opacity);
     pointer-events: none;
 }
-/* animation text in item2 */
+
 .zone1-carousel .list .item:nth-child(2) .introduce .title,
 .zone1-carousel .list .item:nth-child(2) .introduce .topic,
 .zone1-carousel .list .item:nth-child(2) .introduce .des,
@@ -161,7 +162,7 @@
 .zone1-carousel .list .item:nth-child(2) .introduce .seeMore{
     animation-delay: 1.6s;
 }
-/* next click */
+
 .zone1-carousel.next .item:nth-child(1){
     animation: transformFromPosition2 0.5s ease-in-out 1 forwards;
 }
@@ -202,7 +203,7 @@
         opacity: var(--item5-opacity);
     }
 }
-/* previous */
+
 .zone1-carousel.prev .list .item:nth-child(5){
     animation: transformFromPosition4 0.5s ease-in-out 1 forwards;
 }
@@ -223,12 +224,12 @@
     }
 }
 
-/* detail  */
+
 .zone1-carousel .list .item .detail{
     opacity: 0;
     pointer-events: none;
 }
-/* showDetail */
+
 .zone1-carousel.showDetail .list .item:nth-child(3),
 .zone1-carousel.showDetail .list .item:nth-child(4){
     left: 100%;
@@ -338,8 +339,9 @@
     position: absolute;
     z-index: 100;
     bottom: -30px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: auto;
+    right: 5%;
+    transform: none;
     border: none;
     border-bottom: 2px solid #0f172a;
     font-family: Poppins;
@@ -355,7 +357,7 @@
 .zone1-carousel.showDetail #back{
     opacity: 1;
     pointer-events: auto;
-    bottom: 0px;
+    bottom: 50px;
 }
 .zone1-carousel.showDetail #prev,
 .zone1-carousel.showDetail #next{
@@ -381,7 +383,7 @@
     filter: blur(130px);
 }
 @media screen and (max-width: 991px){
-    /* ipad, tablets */
+    
     .zone1-carousel .list .item{
         width: 90%;
     }
@@ -393,7 +395,7 @@
     }
 }
 @media screen and (max-width: 767px){
-    /* mobile */
+    
     .zone1-carousel{
         height: 600px;
     }

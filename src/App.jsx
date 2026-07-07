@@ -34,67 +34,63 @@ export default function App() {
 
   return (
     <Router>
-      <div className="min-h-screen text-[#9ca3af] relative font-sans flex flex-col antialiased" style={{background: 'linear-gradient(135deg, #e8edf5 0%, #dfe6f0 30%, #f0f3f8 60%, #e2e8f2 100%)'}}>
+      <div className="min-h-screen text-slate-800 relative font-sans flex flex-col antialiased">
 
-        {/* Glassmorphism Header matching landing page */}
         <header style={{
           position: 'sticky',
           top: 0,
           zIndex: 40,
           height: '70px',
-          background: 'rgba(2, 6, 23, 0.5)',
+          background: 'rgba(255, 255, 255, 0.7)',
           backdropFilter: 'blur(24px)',
           WebkitBackdropFilter: 'blur(24px)',
-          borderBottom: '1px solid rgba(255,255,255,0.1)',
+          borderBottom: '1px solid rgba(0,0,0,0.05)',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
           padding: '0 30px',
-          boxShadow: '0 4px 30px rgba(0,0,0,0.3)',
+          boxShadow: '0 4px 30px rgba(0,0,0,0.03)',
         }}>
-          {/* PSG Branding */}
           <a href="index.html" style={{display:'flex', alignItems:'center', gap:'10px', textDecoration:'none'}}>
             <img src="/img/psg_logo.png" alt="PSG Logo" style={{height:'45px', width:'auto'}} />
             <div style={{display:'flex', flexDirection:'column', justifyContent:'center', fontFamily: "'Poppins', sans-serif"}}>
-              <span style={{color:'#fff', fontWeight:800, fontSize:'1.1rem', lineHeight:1.1, letterSpacing:'0.5px'}}>PSG</span>
-              <span style={{color:'rgba(255,255,255,0.7)', fontWeight:600, fontSize:'0.75rem', lineHeight:1.1}}>College of Technology</span>
+              <span style={{color:'#0f172a', fontWeight:800, fontSize:'1.1rem', lineHeight:1.1, letterSpacing:'0.5px'}}>PSG</span>
+              <span style={{color:'#64748b', fontWeight:600, fontSize:'0.75rem', lineHeight:1.1}}>College of Technology</span>
             </div>
           </a>
 
-          {/* Zone Navigation - Glassmorphism pill style */}
-          <div style={{display:'flex', background:'rgba(255,255,255,0.08)', padding:'4px', borderRadius:'14px', border:'1px solid rgba(255,255,255,0.1)', gap:'4px'}}>
-            <Link to="/zone1" style={{padding:'8px 18px', borderRadius:'10px', fontSize:'0.78rem', fontWeight:700, textTransform:'uppercase', letterSpacing:'0.05em', transition:'all 0.3s', color:'rgba(255,255,255,0.6)', textDecoration:'none', display:'inline-block'}}
-              onMouseOver={e=>{e.target.style.color='#fff';e.target.style.background='rgba(37,99,235,0.25)';e.target.style.boxShadow='0 0 15px rgba(37,99,235,0.4)'}}
-              onMouseOut={e=>{e.target.style.color='rgba(255,255,255,0.6)';e.target.style.background='transparent';e.target.style.boxShadow='none'}}
+          <div style={{display:'flex', background:'rgba(0,0,0,0.02)', padding:'4px', borderRadius:'14px', border:'1px solid rgba(0,0,0,0.05)', gap:'4px'}}>
+            <Link to="/zone1" style={{padding:'8px 18px', borderRadius:'10px', fontSize:'0.78rem', fontWeight:700, textTransform:'uppercase', letterSpacing:'0.05em', transition:'all 0.3s', color:'#64748b', textDecoration:'none', display:'inline-block'}}
+              onMouseOver={e=>{e.target.style.color='#0f172a';e.target.style.background='rgba(37,99,235,0.1)';e.target.style.boxShadow='0 0 15px rgba(37,99,235,0.15)'}}
+              onMouseOut={e=>{e.target.style.color='#64748b';e.target.style.background='transparent';e.target.style.boxShadow='none'}}
             >Dept Highlights</Link>
-            <Link to="/" style={{padding:'8px 18px', borderRadius:'10px', fontSize:'0.78rem', fontWeight:700, textTransform:'uppercase', letterSpacing:'0.05em', transition:'all 0.3s', color:'rgba(255,255,255,0.6)', textDecoration:'none', display:'inline-block'}}
-              onMouseOver={e=>{e.target.style.color='#fff';e.target.style.background='rgba(37,99,235,0.25)';e.target.style.boxShadow='0 0 15px rgba(37,99,235,0.4)'}}
-              onMouseOut={e=>{e.target.style.color='rgba(255,255,255,0.6)';e.target.style.background='transparent';e.target.style.boxShadow='none'}}
+            <Link to="/" style={{padding:'8px 18px', borderRadius:'10px', fontSize:'0.78rem', fontWeight:700, textTransform:'uppercase', letterSpacing:'0.05em', transition:'all 0.3s', color:'#64748b', textDecoration:'none', display:'inline-block'}}
+              onMouseOver={e=>{e.target.style.color='#0f172a';e.target.style.background='rgba(37,99,235,0.1)';e.target.style.boxShadow='0 0 15px rgba(37,99,235,0.15)'}}
+              onMouseOut={e=>{e.target.style.color='#64748b';e.target.style.background='transparent';e.target.style.boxShadow='none'}}
             >Innovation Gallery</Link>
-            <Link to="/zone3" style={{padding:'8px 18px', borderRadius:'10px', fontSize:'0.78rem', fontWeight:700, textTransform:'uppercase', letterSpacing:'0.05em', transition:'all 0.3s', color:'rgba(255,255,255,0.6)', textDecoration:'none', display:'inline-block'}}
-              onMouseOver={e=>{e.target.style.color='#fff';e.target.style.background='rgba(37,99,235,0.25)';e.target.style.boxShadow='0 0 15px rgba(37,99,235,0.4)'}}
-              onMouseOut={e=>{e.target.style.color='rgba(255,255,255,0.6)';e.target.style.background='transparent';e.target.style.boxShadow='none'}}
+            <Link to="/zone3" style={{padding:'8px 18px', borderRadius:'10px', fontSize:'0.78rem', fontWeight:700, textTransform:'uppercase', letterSpacing:'0.05em', transition:'all 0.3s', color:'#64748b', textDecoration:'none', display:'inline-block'}}
+              onMouseOver={e=>{e.target.style.color='#0f172a';e.target.style.background='rgba(37,99,235,0.1)';e.target.style.boxShadow='0 0 15px rgba(37,99,235,0.15)'}}
+              onMouseOut={e=>{e.target.style.color='#64748b';e.target.style.background='transparent';e.target.style.boxShadow='none'}}
             >AI & Emerging Tech</Link>
-            <Link to="/zone4" style={{padding:'8px 18px', borderRadius:'10px', fontSize:'0.78rem', fontWeight:700, textTransform:'uppercase', letterSpacing:'0.05em', transition:'all 0.3s', color:'rgba(255,255,255,0.6)', textDecoration:'none', display:'inline-block'}}
-              onMouseOver={e=>{e.target.style.color='#fff';e.target.style.background='rgba(37,99,235,0.25)';e.target.style.boxShadow='0 0 15px rgba(37,99,235,0.4)'}}
-              onMouseOut={e=>{e.target.style.color='rgba(255,255,255,0.6)';e.target.style.background='transparent';e.target.style.boxShadow='none'}}
+            <Link to="/zone4" style={{padding:'8px 18px', borderRadius:'10px', fontSize:'0.78rem', fontWeight:700, textTransform:'uppercase', letterSpacing:'0.05em', transition:'all 0.3s', color:'#64748b', textDecoration:'none', display:'inline-block'}}
+              onMouseOver={e=>{e.target.style.color='#0f172a';e.target.style.background='rgba(37,99,235,0.1)';e.target.style.boxShadow='0 0 15px rgba(37,99,235,0.15)'}}
+              onMouseOut={e=>{e.target.style.color='#64748b';e.target.style.background='transparent';e.target.style.boxShadow='none'}}
             >Research & Innovation</Link>
-            <Link to="/zone5" style={{padding:'8px 18px', borderRadius:'10px', fontSize:'0.78rem', fontWeight:700, textTransform:'uppercase', letterSpacing:'0.05em', transition:'all 0.3s', color:'rgba(255,255,255,0.6)', textDecoration:'none', display:'inline-block'}}
-              onMouseOver={e=>{e.target.style.color='#fff';e.target.style.background='rgba(37,99,235,0.25)';e.target.style.boxShadow='0 0 15px rgba(37,99,235,0.4)'}}
-              onMouseOut={e=>{e.target.style.color='rgba(255,255,255,0.6)';e.target.style.background='transparent';e.target.style.boxShadow='none'}}
+            <Link to="/zone5" style={{padding:'8px 18px', borderRadius:'10px', fontSize:'0.78rem', fontWeight:700, textTransform:'uppercase', letterSpacing:'0.05em', transition:'all 0.3s', color:'#64748b', textDecoration:'none', display:'inline-block'}}
+              onMouseOver={e=>{e.target.style.color='#0f172a';e.target.style.background='rgba(37,99,235,0.1)';e.target.style.boxShadow='0 0 15px rgba(37,99,235,0.15)'}}
+              onMouseOut={e=>{e.target.style.color='#64748b';e.target.style.background='transparent';e.target.style.boxShadow='none'}}
             >Industry Connect</Link>
           </div>
 
-          {/* Back to Landing Page */}
           <a href="index.html" style={{
             display:'inline-flex', alignItems:'center', gap:'8px',
-            background:'rgba(37,99,235,0.2)', border:'1px solid rgba(37,99,235,0.3)',
-            color:'#fff', padding:'8px 20px', borderRadius:'50px',
+            background:'rgba(37,99,235,0.1)', border:'1px solid rgba(37,99,235,0.2)',
+            color:'#2563eb', padding:'8px 20px', borderRadius:'50px',
             fontSize:'0.8rem', fontWeight:600, textDecoration:'none',
             transition:'all 0.3s'
           }}
-            onMouseOver={e=>{e.target.style.background='rgba(37,99,235,0.4)';e.target.style.boxShadow='0 0 20px rgba(37,99,235,0.5)'}}
-            onMouseOut={e=>{e.target.style.background='rgba(37,99,235,0.2)';e.target.style.boxShadow='none'}}
+            onMouseOver={e=>{e.target.style.background='rgba(37,99,235,0.2)';e.target.style.boxShadow='0 0 15px rgba(37,99,235,0.2)'}}
+            onMouseOut={e=>{e.target.style.background='rgba(37,99,235,0.1)';e.target.style.boxShadow='none'}}
           >
             ← Back to Home
           </a>

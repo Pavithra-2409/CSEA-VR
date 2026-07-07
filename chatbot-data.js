@@ -1,5 +1,5 @@
 const psgKnowledge = [
-    // 1. General & Campus Information
+    
     {
         keywords: ["location", "where", "located", "city", "address", "peelamedu"],
         answer: "PSG College of Technology is centrally located on Avinashi Road in Peelamedu, Coimbatore, Tamil Nadu, India. It's easily accessible by bus, train (close to Coimbatore Junction), and air (near Coimbatore International Airport)."
@@ -33,7 +33,7 @@ const psgKnowledge = [
         answer: "Our official website is www.psgtech.edu. You can find all academic, administrative, and admission-related information there."
     },
 
-    // 2. Admissions & Enrollment
+    
     {
         keywords: ["admission", "admisin", "apply", "application", "freshers", "enroll", "intake"],
         answer: "B.E./B.Tech admissions are primarily done through TNEA (Tamil Nadu Engineering Admissions) counseling based on 12th standard marks. Application deadlines align with the state government schedule. All procedures are online via the TNEA portal."
@@ -59,7 +59,7 @@ const psgKnowledge = [
         answer: "International students and NRIs can apply under the Foreign Nationals/NRI quota. Specific eligibility criteria apply, but SAT or IELTS scores are typically not mandatory unless specified by the AICTE guidelines for that year."
     },
 
-    // 3. Fees & Financial Aid
+    
     {
         keywords: ["tuition", "semester", "pay", "payment", "deadline", "receipt", "installment"],
         answer: "Tuition fees for government-aided courses are highly subsidized, while self-supporting courses follow a different structure. Fees must be paid at the beginning of each semester online through the student portal (CAMU/AMRITA). Installment plans are generally not offered, but official receipts can be downloaded instantly."
@@ -77,7 +77,7 @@ const psgKnowledge = [
         answer: "The fee refund policy adheres strictly to AICTE guidelines. If a student withdraws before the prescribed cutoff date, fees are refunded after deducting processing charges."
     },
 
-    // 4. Academics & Courses
+    
     {
         keywords: ["major", "course", "degree", "minor", "branch"],
         answer: "We offer top-tier B.E./B.Tech programs in CSE, IT, ECE, EEE, Mechanical, Production, Robotics, Bio-Medical, and more, alongside numerous M.E./M.Tech, MBA, MCA, and applied science degrees."
@@ -103,7 +103,7 @@ const psgKnowledge = [
         answer: "Summer internships and in-plant training are highly encouraged and often mandatory. Our strong industry ties help students secure internships at top MNCs and core industries."
     },
 
-    // 5. Campus Life & Student Services
+    
     {
         keywords: ["club", "society", "join", "start", "government", "event", "kriya", "intrams"],
         answer: "Campus life is incredibly vibrant! You can join over 30 clubs, including the Computer Science Engineering Association (CSEA), GitHub Campus Club, Robotics Club, and the Students Union. Flagship events include KRIYA (Techfest) and INTRAMS (Cultural fest)."
@@ -125,7 +125,7 @@ const psgKnowledge = [
         answer: "PSG Tech is committed to inclusivity. The campus is equipped with ramps, elevators, and dedicated support services for students with disabilities to ensure equal access to all facilities."
     },
 
-    // 6. Accommodation & Dining
+    
     {
         keywords: ["hostel", "dorm", "housing", "roommate", "apply", "cost", "accommodation"],
         answer: "We provide excellent on-campus hostel facilities for boys and girls. Accommodation is allotted based on distance and merit. Roommate allocations are managed by the wardens. Detailed cost structures are provided during admission."
@@ -143,7 +143,7 @@ const psgKnowledge = [
         answer: "Strict disciplinary rules apply in dorms; alcohol, smoking, and ragging are strictly forbidden and carry severe penalties. Hostels typically close during major summer/winter breaks, except for students with special academic permissions."
     },
 
-    // 7. IT Support & Library
+    
     {
         keywords: ["password", "portal", "email", "reset", "login", "app"],
         answer: "You can reset your student portal password and access your official college email via the central IT helpdesk. We have a robust online portal to track attendance, grades, and fee payments."

@@ -227,10 +227,10 @@ body{
     }
 }
 
-/* animation */
+
 body{
     .carousel{
-        --calculation: 1; /* 1 or -1 */
+        --calculation: 1; 
         & .list{
             & .item{
                 transform: translateX(calc(100vw * var(--calculation)));
@@ -334,7 +334,7 @@ body{
     }
 }
 
-/* ── BACK TO HOME BUTTON ── */
+
 .btn-back-home {
     position: fixed;
     bottom: 32px;
@@ -383,7 +383,7 @@ body{
     transform: translateX(-3px);
 }
 
-/* ── FLOAT ANIMATION ── */
+
 @keyframes floatImage {
     0% { transform: translateY(0px) rotate(0deg); }
     50% { transform: translateY(-20px) rotate(0deg); }

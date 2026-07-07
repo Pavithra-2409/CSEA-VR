@@ -34,7 +34,7 @@
             overflow-x: hidden;
         }
 
-        /* ── NAVBAR ── */
+        
         header {
             position: fixed;
             top: 0;
@@ -109,7 +109,7 @@
             transform: scale(1.03);
         }
 
-        /* ── HERO ── */
+        
         .hero {
             min-height: 100vh;
             background: radial-gradient(ellipse at 30% 50%, #1e2048 0%, #111126 70%);
@@ -275,7 +275,7 @@
             margin: 0;
         }
 
-        /* Hero shoe visual */
+        
         .hero-visual {
             position: relative;
             display: flex;
@@ -303,7 +303,7 @@
             animation: float 4s ease-in-out infinite;
         }
 
-        /* Floating rings */
+        
         .ring {
             position: absolute;
             border-radius: 50%;
@@ -313,7 +313,7 @@
         .ring-1 { width: 450px; height: 450px; top: 50%; left: 50%; transform: translate(-50%,-50%); }
         .ring-2 { width: 600px; height: 600px; top: 50%; left: 50%; transform: translate(-50%,-50%); opacity: 0.4; }
 
-        /* ── FEATURES STRIP ── */
+        
         .features-strip {
             display: flex;
             justify-content: center;
@@ -362,7 +362,7 @@
             color: var(--text-muted);
         }
 
-        /* ── COLLECTION SECTION ── */
+        
         .section {
             padding: 100px 5%;
             max-width: 1300px;
@@ -405,7 +405,7 @@
 
         .section-link:hover { gap: 14px; }
 
-        /* Category Cards */
+        
         .categories-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -495,7 +495,7 @@
             margin-top: 10px;
         }
 
-        /* ── BANNER ── */
+        
         .banner {
             margin: 0 5%;
             background: linear-gradient(135deg, #1a2a4a 0%, #111126 100%);
@@ -562,7 +562,7 @@
             animation: float 5s ease-in-out infinite;
         }
 
-        /* ── FOOTER ── */
+        
         footer {
             margin-top: 100px;
             background: rgba(17,17,38,0.9);
@@ -653,7 +653,7 @@
             color: var(--text-muted);
         }
 
-        /* ── ANIMATIONS ── */
+        
         @keyframes fadeUp {
             from { opacity: 0; transform: translateY(30px); }
             to   { opacity: 1; transform: translateY(0); }
@@ -674,7 +674,7 @@
             50%       { opacity: 0.4; }
         }
 
-        /* Scroll reveal */
+        
         .reveal {
             opacity: 0;
             transform: translateY(40px);
@@ -686,7 +686,7 @@
             transform: translateY(0);
         }
 
-        /* ── RESPONSIVE ── */
+        
         @media (max-width: 900px) {
             .hero-grid { grid-template-columns: 1fr; text-align: center; }
             .hero-text p { max-width: 100%; }
@@ -708,7 +708,7 @@
 </head>
 <body>
 
-    <!-- NAVBAR -->
+    
     <header>
         <figure class="logo">
             <img src="img/logo.png" alt="Nike Logo">
@@ -728,7 +728,7 @@
         </div>
     </header>
 
-    <!-- HERO -->
+    
     <section class="hero">
         <div class="hero-grid">
             <div class="hero-text">
@@ -767,7 +767,7 @@
         </div>
     </section>
 
-    <!-- FEATURES STRIP -->
+    
     <div class="features-strip">
         <div class="feature-item">
             <i class="fa-solid fa-truck-fast"></i>
@@ -799,7 +799,7 @@
         </div>
     </div>
 
-    <!-- COLLECTIONS -->
+    
     <div id="collections" style="max-width:1300px; margin:auto; padding: 100px 5% 0;">
         <div class="section-header reveal">
             <div>
@@ -834,7 +834,7 @@
         </div>
     </div>
 
-    <!-- BANNER -->
+    
     <div style="max-width:1300px; margin: 60px auto;">
         <div class="banner reveal">
             <div>
@@ -851,7 +851,7 @@
         </div>
     </div>
 
-    <!-- FOOTER -->
+    
     <footer>
         <div class="footer-grid">
             <div class="footer-brand">
@@ -902,7 +902,7 @@
     </footer>
 
     <script>
-        // Scroll reveal
+        
         const reveals = document.querySelectorAll('.reveal');
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -913,7 +913,7 @@
         }, { threshold: 0.12 });
         reveals.forEach(el => observer.observe(el));
 
-        // Navbar scroll effect
+        
         const header = document.querySelector('header');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 40) {
